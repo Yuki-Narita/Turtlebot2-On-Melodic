@@ -3,10 +3,10 @@
 read -p "password? : " password
 echo ""
 
-echo "$password" | sudo -S apt update
+echo $password | sudo -S apt update
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
-echo "$password" | sudo -S install -y python-catkin-tools
+echo $password | sudo -S install -y python-catkin-tools
 catkin build
 
 cd src
@@ -27,14 +27,14 @@ git clone https://github.com/yujinrobot/yujin_ocs.git
 mv yujin_ocs/yocs_cmd_vel_mux yujin_ocs/yocs_controllers .
 rm -rf yujin_ocs
 
-echo "$password" | sudo -S apt install ros-melodic-kobuki-* -y
-echo "$password" | sudo -S apt install ros-melodic-ecl-streams -y
+echo $password | sudo -S apt install ros-melodic-kobuki-* -y
+echo $password | sudo -S apt install ros-melodic-ecl-streams -y
 
 #追加分
-echo "$password" | sudo -S apt install -y ros-melodic-urdf ros-melodic-xacro ros-melodic-diagnostic-updater ros-melodic-joy ros-melodic-robot-state-publisher ros-melodic-diagnostic-aggregator
+echo $password | sudo -S apt install -y ros-melodic-urdf ros-melodic-xacro ros-melodic-diagnostic-updater ros-melodic-joy ros-melodic-robot-state-publisher ros-melodic-diagnostic-aggregator
 catkin build
 
-echo "$password" | sudo -S apt install -y ros-melodic-navigation ros-melodic-rtabmap-ros ros-melodic-gmapping
+echo $password | sudo -S apt install -y ros-melodic-navigation ros-melodic-rtabmap-ros ros-melodic-gmapping
 git clone https://github.com/GT-RAIL/robot_pose_publisher.git
 git clone -b melodic-test https://github.com/hidakalab-robot/multiple_robots_slam.git
 
