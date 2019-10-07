@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-echo 'password?'
+echo 'password?: '
 read password
 
 echo "$password" | sudo -S apt update
