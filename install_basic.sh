@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 read -p "password? : " password
 echo ""
