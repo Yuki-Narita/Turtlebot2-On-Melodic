@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
-printf "password: "
-read password
+read -p "password? > " password
 
 echo "$password" | sudo -S apt update
 mkdir -p ~/catkin_ws/src
