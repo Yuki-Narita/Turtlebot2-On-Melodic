@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+sudo apt update
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
 sudo apt install python-catkin-tools
