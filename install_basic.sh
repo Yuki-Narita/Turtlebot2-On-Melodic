@@ -5,7 +5,7 @@ read -t 100 -p "password? : " password
 echo $password | sudo -S apt update
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
-echo $password | sudo -S install -y python-catkin-tools
+echo $password | sudo -S apt install -y python-catkin-tools
 catkin build
 
 cd src
