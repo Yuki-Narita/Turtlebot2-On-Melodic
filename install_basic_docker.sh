@@ -3,7 +3,7 @@
 apt update
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
-apt install -y python-catkin-tools
+apt install python-catkin-tools -y
 catkin build
 
 cd src
