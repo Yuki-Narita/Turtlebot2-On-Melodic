@@ -31,7 +31,7 @@ sudo apt install ros-melodic-ecl-streams -y
 sudo apt install -y ros-melodic-urdf ros-melodic-xacro ros-melodic-diagnostic-updater ros-melodic-joy ros-melodic-robot-state-publisher ros-melodic-diagnostic-aggregator
 catkin build
 
-sudo apt install -y ros-melodic-navigation ros-melodic-rtabmap-ros
+sudo apt install -y ros-melodic-navigation ros-melodic-rtabmap-ros ros-melodic-gmapping
 git clone https://github.com/GT-RAIL/robot_pose_publisher.git
 git clone -b melodic-test https://github.com/hidakalab-robot/multiple_robots_slam.git
 
