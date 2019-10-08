@@ -38,3 +38,5 @@ git clone https://github.com/GT-RAIL/robot_pose_publisher.git
 git clone -b melodic-test https://github.com/hidakalab-robot/multiple_robots_slam.git
 
 catkin build
+
+echo "スクリプトが終了しました"
