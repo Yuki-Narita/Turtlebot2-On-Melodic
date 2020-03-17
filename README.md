@@ -1,3 +1,34 @@
+<!-- 
+仮想環境のubuntu18でturtlebotのbringupまで出来たので手順をスクリプトにして書いておきました。
+もし今の方法で動かなかったら試してみてください。　 
+前に渡した探査パッケージのインストールも一緒にやってくれます。
+
+
+コピペ用txtファイルも以下に置いておきます
+
+短縮url版(多分使えるはず)
+https://bit.ly/33dkNW2
+
+フルurl版
+https://tdu.box.com/s/l6w5r1eaw8fvz10dwahobb1dihj8oe87
+
+-->
+# インストール
+catkin_wsにあるturtlebot関連のディレクトリを削除してから次のスクリプトを実行してください。
+```
+$ sudo apt install curl
+$ bash <(curl -sL https://raw.githubusercontent.com/Yuki-Narita/Turtlebot2-On-Melodic/master/install_basic.sh)
+```
+上のコマンドを打つとインストールからコンパイルまで全部やってくれます(場合によってはそこそこ時間が掛かるかもしれません)。
+多分エラー無しで行けると思います。
+処理が終了したらターミナルを再起動（もしくは source ~/.bashrc ）してください。
+
+bringupのコマンドが実行できると思います
+```
+$ roslaunch turtlebot_bringup  minimal.launch
+```
+# 以下,元のreadme
+
 # Turtlebot2-On-Melodic
 Make your [Turtlebot2](https://www.turtlebot.com/turtlebot2/) run on ROS Melodic (Ubuntu 18.04).
 
